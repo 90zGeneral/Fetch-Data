@@ -21,9 +21,13 @@ class ViewController: UIViewController {
         
         fetchData() { result in
             self.message.text = result?.message
+            self.message.textColor = UIColor.orange
             self.timestamp.text = result?.timeStamp
+            self.timestamp.textColor = UIColor.red
             self.latitude.text = result?.coordinate.lat
+            self.latitude.textColor = UIColor.green
             self.longitude.text = result?.coordinate.long
+            self.longitude.textColor = UIColor.blue
         }
         
     }
